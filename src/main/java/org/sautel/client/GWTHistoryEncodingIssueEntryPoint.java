@@ -14,7 +14,7 @@ public class GWTHistoryEncodingIssueEntryPoint implements EntryPoint {
   private static final String EXPECTED_TOKEN = "%3A%40";
 
   public void onModuleLoad() {
-    Anchor anchor = new Anchor("Click me to change hash");
+    Anchor anchor = new Anchor("Click me to change token");
     anchor.setHref("#%253A%40");
     anchor.addClickHandler(new ClickHandler() {
       public void onClick(ClickEvent event) {
